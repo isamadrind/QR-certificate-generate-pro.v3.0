@@ -484,7 +484,7 @@ if page == "form":
 # ═════════════════════════════════════════════════════════════════
 #  ADMIN PAGE
 # ═════════════════════════════════════════════════════════════════
-st.markdown("# 🎓 QR Certificate System")
+st.markdown("# 🎓 QR Certificate Generator Pro V3.0")
 st.markdown(
     '<p style="text-align:center;color:#7ecefd;">'
     'Abdul Samad | Shaheed Benazir Bhutto University Nawabshah</p>',
