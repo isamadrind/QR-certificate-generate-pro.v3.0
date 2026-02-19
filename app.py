@@ -138,7 +138,7 @@ DEFAULTS = {
     "event_venue":    "",
     "event_topic":    "",
     "organizer":      "",
-    "categories":     "Participant,Teacher,Speaker,Management",
+    "categories":     "Participate,Teacher",
     "qr_data":        None,
     "qr_url":         "",
     # Text settings
@@ -419,17 +419,17 @@ if page == "form":
 
     c1, c2 = st.columns(2)
     with c1:
-        name   = st.text_input("👤 Poora Naam / Full Name ✱",
+        name   = st.text_input("👤 Full Name ✱",
                                placeholder="Muhammad Ali Khan")
         dept   = st.text_input("🏫 Department ✱",
                                placeholder="Computer Science")
     with c2:
         rollno = st.text_input("🔢 Roll No ✱",
-                               placeholder="CS-2022-45")
+                               placeholder="24-BSCS-45")
         batch  = st.text_input("📅 Batch / Year ✱",
-                               placeholder="2022-2026")
+                               placeholder="2024")
 
-    category = st.selectbox("🏷️ Category — Aap kaun hain? ✱", cats)
+    category = st.selectbox("🏷️ Category — Choose option accordingly ✱", cats)
 
     st.markdown("---")
     submitted = st.button("✅  Jama Karein / Submit", use_container_width=True)
@@ -441,7 +441,7 @@ if page == "form":
                    [("Full Name",n),("Roll No",r),("Department",d),("Batch",b)]
                    if not v])
         if missing:
-            st.error("❌ Yeh fields zaroori hain: **" + "  |  ".join(missing) + "**")
+            st.error("❌ Fill this field: **" + "  |  ".join(missing) + "**")
         else:
             now = datetime.now()
             st.session_state.registrations.append({
@@ -618,9 +618,9 @@ with tab1:
 | Field | Example |
 |-------|---------|
 | 👤 Full Name | Muhammad Ali Khan |
-| 🔢 Roll No | CS-2022-45 |
+| 🔢 Roll No | 24-BSCS-45 |
 | 🏫 Department | Computer Science |
-| 📅 Batch | 2022-2026 |
+| 📅 Batch | 2024 |
 | 🏷️ Category | Participant |
 
 ✅ Submit hote hi data yahan **Tab 2** mein dikh jata hai  
