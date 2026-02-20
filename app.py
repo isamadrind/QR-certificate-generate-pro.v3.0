@@ -940,7 +940,7 @@ requirements.txt
 ```bash
 cd d:/Avalon.AI
 git add app.py requirements.txt
-git commit -m "QR Certificate System v4"
+git commit -m "QR Certificate Generator Pro V3.0"
 git push
 ```
 
@@ -966,5 +966,5 @@ Streamlit auto-update ho jata hai!
 st.markdown("---")
 st.markdown(
     '<p style="text-align:center;color:#7ecefd44;font-size:.85rem;">'
-    '© QR Certificate System v4.0 | Abdul Samad | SBBU Nawabshah</p>',
+    '© QR Certificate System v3.0 | Abdul Samad | SBBU Nawabshah</p>',
     unsafe_allow_html=True)
